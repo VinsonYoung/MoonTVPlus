@@ -1831,14 +1831,14 @@ export default function MusicClient({ children: _children }: { children?: React.
             <div className="flex items-center gap-3">
               <button
                 onClick={() => setShowSidebarDrawer(true)}
-                className="w-8 h-8 rounded-full flex items-center justify-center bg-white/10 hover:bg-white/20 text-white transition-colors"
+                className="p-0 text-white transition-colors hover:text-green-400"
                 title="打开菜单"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
-              <div className="w-8 h-8 rounded-full flex items-center justify-center bg-white/10 text-green-500">
+              <div className="flex items-center justify-center text-green-500">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z" />
                 </svg>

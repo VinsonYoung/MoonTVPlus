@@ -10,6 +10,7 @@ interface MusicSidebarDrawerProps {
 
 const musicNavItems = [
   { key: 'rankings', label: '排行榜', href: '/music/rankings', icon: 'M3 4h18M8 8h13M3 12h18M8 16h13M3 20h18' },
+  { key: 'songlists', label: '推荐歌单', href: '/music/songlists', icon: 'M4 6h16M4 12h10M4 18h14' },
   { key: 'search', label: '搜索', icon: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' },
   { key: 'my-playlists', label: '我的歌单', href: '/music/my-playlists', icon: 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z' },
 ];
@@ -29,7 +30,7 @@ export default function MusicSidebarDrawer({
   };
 
   return (
-    <div className="fixed inset-0 z-[95]">
+    <div className="fixed inset-0 z-[10000]">
       <button
         className="absolute inset-0 bg-black/60 backdrop-blur-sm animate-in fade-in duration-300"
         onClick={onClose}
